@@ -2,3 +2,4 @@
 *.xcodeproj/*.pbxuser
 build/*
 .DS_Store
+/test-reports
