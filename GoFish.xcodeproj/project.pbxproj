@@ -19,6 +19,10 @@
 		CA0C598D12E4050700AE5AC0 /* GoFishAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GoFishAppDelegate.m */; };
 		CA0C598F12E4050C00AE5AC0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		CA0C599012E4050D00AE5AC0 /* GoFishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GoFishViewController.xib */; };
+		CA4B977512E4357A001B0E03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		CA4B977812E4357C001B0E03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		CA4B977B12E4357D001B0E03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		CA4B980312E43659001B0E03 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4B980212E43659001B0E03 /* OCHamcrestIOS.framework */; };
 		CAFB39DD12E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39D712E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m */; };
 		CAFB39DE12E410C10079AEFB /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39D812E410C10079AEFB /* GTMIPhoneUnitTestMain.m */; };
 		CAFB39DF12E410C10079AEFB /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39DA12E410C10079AEFB /* GTMSenTestCase.m */; };
@@ -43,6 +47,7 @@
 		8D1107310486CEB800E47090 /* GoFish-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoFish-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		CA0C596A12E404A000AE5AC0 /* GoFishUnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFishUnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0C596C12E404A000AE5AC0 /* GoFishUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoFishUnitTest-Info.plist"; sourceTree = "<group>"; };
+		CA4B980212E43659001B0E03 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = Frameworks/OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		CAFB39D612E410C10079AEFB /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMIPhoneUnitTestDelegate.h; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestDelegate.h"; sourceTree = "<group>"; };
 		CAFB39D712E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestDelegate.m; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestDelegate.m"; sourceTree = "<group>"; };
 		CAFB39D812E410C10079AEFB /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestMain.m"; sourceTree = "<group>"; };
@@ -72,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4B977512E4357A001B0E03 /* UIKit.framework in Frameworks */,
+				CA4B977812E4357C001B0E03 /* Foundation.framework in Frameworks */,
+				CA4B977B12E4357D001B0E03 /* CoreGraphics.framework in Frameworks */,
+				CA4B980312E43659001B0E03 /* OCHamcrestIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +143,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA4B980212E43659001B0E03 /* OCHamcrestIOS.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -349,6 +359,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -360,6 +375,8 @@
 					Foundation,
 					"-framework",
 					UIKit,
+					"-lstdc++",
+					"-ObjC",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = GoFishUnitTest;
@@ -374,6 +391,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
@@ -384,6 +406,8 @@
 					Foundation,
 					"-framework",
 					UIKit,
+					"-lstdc++",
+					"-ObjC",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = GoFishUnitTest;
