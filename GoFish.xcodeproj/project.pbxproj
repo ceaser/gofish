@@ -279,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "google-toolbox-for-mac/UnitTesting/RunIPhoneUnitTest.sh";
+			shellScript = "google-toolbox-for-mac/UnitTesting/RunIPhoneUnitTest.sh\n\nif [ \"${CONFIGURATION}\" = 'Coverage' ]; then\n  Tools/gcovr -r `pwd` -e google-toolbox-for-mac -x -o coverage.xml\n\n  # FRAMEWORK_NAME=GoFish\n  # FRAMEWORK_OBJ_DIR=${OBJECT_FILE_DIR_normal}/${NATIVE_ARCH}\n  # mkdir -p coverage\n  # pushd coverage\n  # find ${OBJROOT} -name *.gcda -exec gcov -o ${FRAMEWORK_OBJ_DIR} {} \\;\n  # popd\nfi \n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -444,6 +444,74 @@
 			};
 			name = Release;
 		};
+		CAF2679312E4536300D14AB2 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Coverage;
+		};
+		CAF2679412E4536300D14AB2 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GoFish_Prefix.pch;
+				INFOPLIST_FILE = "GoFish-Info.plist";
+				PRODUCT_NAME = GoFish;
+			};
+			name = Coverage;
+		};
+		CAF2679512E4536300D14AB2 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/Headers";
+				INFOPLIST_FILE = "GoFishUnitTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
+				);
+				OTHER_LDFLAGS = (
+					"-lgcov",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-lstdc++",
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Libraries/libOCMock.a",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GoFishUnitTest;
+				SDKROOT = iphoneos;
+			};
+			name = Coverage;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -451,6 +519,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
+				CAF2679412E4536300D14AB2 /* Coverage */,
 				1D6058950D05DD3E006BFB54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -460,6 +529,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
+				CAF2679312E4536300D14AB2 /* Coverage */,
 				C01FCF5008A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -469,6 +539,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA0C596D12E404A000AE5AC0 /* Debug */,
+				CAF2679512E4536300D14AB2 /* Coverage */,
 				CA0C596E12E404A000AE5AC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

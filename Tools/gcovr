@@ -314,9 +314,10 @@ def process_datafile(filename, covdata, options):
     errors=[]
 
     while True:
-        os.chdir(dirname)
-        cmd = [gcov_cmd, "--branch-counts", "--branch-probabilities", 
-               "--preserve-paths"]
+        #os.chdir(dirname)
+        # cmd = [gcov_cmd, "--branch-counts", "--branch-probabilities", 
+        #        "--preserve-paths"]
+        cmd = [gcov_cmd, "--branch-counts", "--branch-probabilities", "--preserve-paths", file, "-o", dirname]
         if options.objdir:
             cmd.extend(["--object-directory", Template(options.objdir).substitute(filename=filename, head=dirname, tail=base, root=name, ext=ext)])
         cmd.append(dirname)
