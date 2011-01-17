@@ -15,16 +15,16 @@
 		2899E5220DE3E06400AC0155 /* GoFishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GoFishViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* GoFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GoFishViewController.m */; };
-		CA0C598612E404FA00AE5AC0 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA96A22612E3B861005C76A7 /* GTMIPhoneUnitTestDelegate.m */; };
-		CA0C598712E404FA00AE5AC0 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = CA96A22712E3B861005C76A7 /* GTMIPhoneUnitTestMain.m */; };
-		CA0C598812E404FB00AE5AC0 /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = CA96A23512E3B8A0005C76A7 /* GTMObjC2Runtime.m */; };
-		CA0C598912E404FC00AE5AC0 /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = CA96A23712E3B8A0005C76A7 /* GTMRegex.m */; };
-		CA0C598A12E404FD00AE5AC0 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = CA96A22912E3B861005C76A7 /* GTMSenTestCase.m */; };
-		CA0C598B12E404FF00AE5AC0 /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CA96A22B12E3B861005C76A7 /* GTMUnitTestDevLog.m */; };
 		CA0C598C12E4050500AE5AC0 /* GoFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GoFishViewController.m */; };
 		CA0C598D12E4050700AE5AC0 /* GoFishAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GoFishAppDelegate.m */; };
 		CA0C598F12E4050C00AE5AC0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		CA0C599012E4050D00AE5AC0 /* GoFishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GoFishViewController.xib */; };
+		CAFB39DD12E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39D712E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m */; };
+		CAFB39DE12E410C10079AEFB /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39D812E410C10079AEFB /* GTMIPhoneUnitTestMain.m */; };
+		CAFB39DF12E410C10079AEFB /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39DA12E410C10079AEFB /* GTMSenTestCase.m */; };
+		CAFB39E012E410C10079AEFB /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39DC12E410C10079AEFB /* GTMUnitTestDevLog.m */; };
+		CAFB39E512E410ED0079AEFB /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39E212E410ED0079AEFB /* GTMObjC2Runtime.m */; };
+		CAFB39E612E410ED0079AEFB /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39E412E410ED0079AEFB /* GTMRegex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,19 +43,18 @@
 		8D1107310486CEB800E47090 /* GoFish-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoFish-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		CA0C596A12E404A000AE5AC0 /* GoFishUnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFishUnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0C596C12E404A000AE5AC0 /* GoFishUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoFishUnitTest-Info.plist"; sourceTree = "<group>"; };
-		CA96A22512E3B861005C76A7 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMIPhoneUnitTestDelegate.h; path = "Libraries/google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestDelegate.h"; sourceTree = "<group>"; };
-		CA96A22612E3B861005C76A7 /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestDelegate.m; path = "Libraries/google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestDelegate.m"; sourceTree = "<group>"; };
-		CA96A22712E3B861005C76A7 /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = "Libraries/google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestMain.m"; sourceTree = "<group>"; };
-		CA96A22812E3B861005C76A7 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSenTestCase.h; path = "Libraries/google-toolbox-for-mac/UnitTesting/GTMSenTestCase.h"; sourceTree = "<group>"; };
-		CA96A22912E3B861005C76A7 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSenTestCase.m; path = "Libraries/google-toolbox-for-mac/UnitTesting/GTMSenTestCase.m"; sourceTree = "<group>"; };
-		CA96A22A12E3B861005C76A7 /* GTMUnitTestDevLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMUnitTestDevLog.h; path = "Libraries/google-toolbox-for-mac/UnitTesting/GTMUnitTestDevLog.h"; sourceTree = "<group>"; };
-		CA96A22B12E3B861005C76A7 /* GTMUnitTestDevLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMUnitTestDevLog.m; path = "Libraries/google-toolbox-for-mac/UnitTesting/GTMUnitTestDevLog.m"; sourceTree = "<group>"; };
-		CA96A23312E3B8A0005C76A7 /* GTMAbstractDOListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMAbstractDOListener.h; path = "Libraries/google-toolbox-for-mac/Foundation/GTMAbstractDOListener.h"; sourceTree = "<group>"; };
-		CA96A23412E3B8A0005C76A7 /* GTMObjC2Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMObjC2Runtime.h; path = "Libraries/google-toolbox-for-mac/Foundation/GTMObjC2Runtime.h"; sourceTree = "<group>"; };
-		CA96A23512E3B8A0005C76A7 /* GTMObjC2Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMObjC2Runtime.m; path = "Libraries/google-toolbox-for-mac/Foundation/GTMObjC2Runtime.m"; sourceTree = "<group>"; };
-		CA96A23612E3B8A0005C76A7 /* GTMRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMRegex.h; path = "Libraries/google-toolbox-for-mac/Foundation/GTMRegex.h"; sourceTree = "<group>"; };
-		CA96A23712E3B8A0005C76A7 /* GTMRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMRegex.m; path = "Libraries/google-toolbox-for-mac/Foundation/GTMRegex.m"; sourceTree = "<group>"; };
-		CA96A23A12E3B8B1005C76A7 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = "Libraries/google-toolbox-for-mac/GTMDefines.h"; sourceTree = "<group>"; };
+		CAFB39D612E410C10079AEFB /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMIPhoneUnitTestDelegate.h; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestDelegate.h"; sourceTree = "<group>"; };
+		CAFB39D712E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestDelegate.m; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestDelegate.m"; sourceTree = "<group>"; };
+		CAFB39D812E410C10079AEFB /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestMain.m"; sourceTree = "<group>"; };
+		CAFB39D912E410C10079AEFB /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSenTestCase.h; path = "google-toolbox-for-mac/UnitTesting/GTMSenTestCase.h"; sourceTree = "<group>"; };
+		CAFB39DA12E410C10079AEFB /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSenTestCase.m; path = "google-toolbox-for-mac/UnitTesting/GTMSenTestCase.m"; sourceTree = "<group>"; };
+		CAFB39DB12E410C10079AEFB /* GTMUnitTestDevLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMUnitTestDevLog.h; path = "google-toolbox-for-mac/UnitTesting/GTMUnitTestDevLog.h"; sourceTree = "<group>"; };
+		CAFB39DC12E410C10079AEFB /* GTMUnitTestDevLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMUnitTestDevLog.m; path = "google-toolbox-for-mac/UnitTesting/GTMUnitTestDevLog.m"; sourceTree = "<group>"; };
+		CAFB39E112E410ED0079AEFB /* GTMObjC2Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMObjC2Runtime.h; path = "google-toolbox-for-mac/Foundation/GTMObjC2Runtime.h"; sourceTree = "<group>"; };
+		CAFB39E212E410ED0079AEFB /* GTMObjC2Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMObjC2Runtime.m; path = "google-toolbox-for-mac/Foundation/GTMObjC2Runtime.m"; sourceTree = "<group>"; };
+		CAFB39E312E410ED0079AEFB /* GTMRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMRegex.h; path = "google-toolbox-for-mac/Foundation/GTMRegex.h"; sourceTree = "<group>"; };
+		CAFB39E412E410ED0079AEFB /* GTMRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMRegex.m; path = "google-toolbox-for-mac/Foundation/GTMRegex.m"; sourceTree = "<group>"; };
+		CAFB39E712E411140079AEFB /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = "google-toolbox-for-mac/GTMDefines.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,19 +144,18 @@
 		CA96A21612E3B7B5005C76A7 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				CA96A23A12E3B8B1005C76A7 /* GTMDefines.h */,
-				CA96A23312E3B8A0005C76A7 /* GTMAbstractDOListener.h */,
-				CA96A23412E3B8A0005C76A7 /* GTMObjC2Runtime.h */,
-				CA96A23512E3B8A0005C76A7 /* GTMObjC2Runtime.m */,
-				CA96A23612E3B8A0005C76A7 /* GTMRegex.h */,
-				CA96A23712E3B8A0005C76A7 /* GTMRegex.m */,
-				CA96A22512E3B861005C76A7 /* GTMIPhoneUnitTestDelegate.h */,
-				CA96A22612E3B861005C76A7 /* GTMIPhoneUnitTestDelegate.m */,
-				CA96A22712E3B861005C76A7 /* GTMIPhoneUnitTestMain.m */,
-				CA96A22812E3B861005C76A7 /* GTMSenTestCase.h */,
-				CA96A22912E3B861005C76A7 /* GTMSenTestCase.m */,
-				CA96A22A12E3B861005C76A7 /* GTMUnitTestDevLog.h */,
-				CA96A22B12E3B861005C76A7 /* GTMUnitTestDevLog.m */,
+				CAFB39D612E410C10079AEFB /* GTMIPhoneUnitTestDelegate.h */,
+				CAFB39D712E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m */,
+				CAFB39D812E410C10079AEFB /* GTMIPhoneUnitTestMain.m */,
+				CAFB39D912E410C10079AEFB /* GTMSenTestCase.h */,
+				CAFB39DA12E410C10079AEFB /* GTMSenTestCase.m */,
+				CAFB39DB12E410C10079AEFB /* GTMUnitTestDevLog.h */,
+				CAFB39DC12E410C10079AEFB /* GTMUnitTestDevLog.m */,
+				CAFB39E112E410ED0079AEFB /* GTMObjC2Runtime.h */,
+				CAFB39E212E410ED0079AEFB /* GTMObjC2Runtime.m */,
+				CAFB39E312E410ED0079AEFB /* GTMRegex.h */,
+				CAFB39E412E410ED0079AEFB /* GTMRegex.m */,
+				CAFB39E712E411140079AEFB /* GTMDefines.h */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -258,7 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "Libraries/google-toolbox-for-mac/UnitTesting/RunIPhoneUnitTest.sh";
+			shellScript = "google-toolbox-for-mac/UnitTesting/RunIPhoneUnitTest.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -277,14 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0C598612E404FA00AE5AC0 /* GTMIPhoneUnitTestDelegate.m in Sources */,
-				CA0C598712E404FA00AE5AC0 /* GTMIPhoneUnitTestMain.m in Sources */,
-				CA0C598812E404FB00AE5AC0 /* GTMObjC2Runtime.m in Sources */,
-				CA0C598912E404FC00AE5AC0 /* GTMRegex.m in Sources */,
-				CA0C598A12E404FD00AE5AC0 /* GTMSenTestCase.m in Sources */,
-				CA0C598B12E404FF00AE5AC0 /* GTMUnitTestDevLog.m in Sources */,
 				CA0C598C12E4050500AE5AC0 /* GoFishViewController.m in Sources */,
 				CA0C598D12E4050700AE5AC0 /* GoFishAppDelegate.m in Sources */,
+				CAFB39DD12E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				CAFB39DE12E410C10079AEFB /* GTMIPhoneUnitTestMain.m in Sources */,
+				CAFB39DF12E410C10079AEFB /* GTMSenTestCase.m in Sources */,
+				CAFB39E012E410C10079AEFB /* GTMUnitTestDevLog.m in Sources */,
+				CAFB39E512E410ED0079AEFB /* GTMObjC2Runtime.m in Sources */,
+				CAFB39E612E410ED0079AEFB /* GTMRegex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
