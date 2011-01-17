@@ -279,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$SOURCE_ROOT/google-toolbox-for-mac/UnitTesting/RunIPhoneUnitTest.sh\n\nset -x\n\nif [ \"${CONFIGURATION}\" = 'Coverage' ]; then\n  mkdir -p coverage\n  $SOURCE_ROOT/Tools/gcovr -r $SOURCE_ROOT -e google-toolbox-for-mac -x -o coverage/coverage.xml\n\n  # FRAMEWORK_NAME=GoFish\n  # FRAMEWORK_OBJ_DIR=${OBJECT_FILE_DIR_normal}/${NATIVE_ARCH}\n  # mkdir -p coverage\n  # pushd coverage\n  # find ${OBJROOT} -name *.gcda -exec gcov -o ${FRAMEWORK_OBJ_DIR} {} \\;\n  # popd\nfi \n";
+			shellScript = "$SOURCE_ROOT/google-toolbox-for-mac/UnitTesting/RunIPhoneUnitTest.sh\n\nif [ \"${CONFIGURATION}\" = 'Coverage' ]; then\n  mkdir -p coverage\n  $SOURCE_ROOT/Tools/gcovr -r $SOURCE_ROOT -e google-toolbox-for-mac -x -o coverage/coverage.xml\n\n  # FRAMEWORK_NAME=GoFish\n  # FRAMEWORK_OBJ_DIR=${OBJECT_FILE_DIR_normal}/${NATIVE_ARCH}\n  # mkdir -p coverage\n  # pushd coverage\n  # find ${OBJROOT} -name *.gcda -exec gcov -o ${FRAMEWORK_OBJ_DIR} {} \\;\n  # popd\nfi \n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
