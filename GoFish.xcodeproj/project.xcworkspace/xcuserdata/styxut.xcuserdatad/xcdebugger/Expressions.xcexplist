@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesStackState
+   version = "1.0">
+   <StackStates>
+      <StackState
+         stackFrameDescription = "GLOBAL">
+         <expressions>
+            <expression
+               value = "playDeck">
+            </expression>
+         </expressions>
+      </StackState>
+      <StackState
+         stackFrameDescription = "+[DeckFunctions getPlayDeck]:DeckFunctions.m">
+         <expressions>
+            <expression
+               value = "[deck count]">
+            </expression>
+         </expressions>
+      </StackState>
+      <StackState
+         stackFrameDescription = "+[DeckFunctions writeDeck:]:DeckFunctions.m">
+         <expressions>
+            <expression
+               value = "[playDeck count]">
+            </expression>
+         </expressions>
+      </StackState>
+   </StackStates>
+</VariablesStackState>

@@ -7,10 +7,16 @@
 //
 
 #import "GoFishViewController.h"
+#import "DeckFunctions.h"
 
 @implementation GoFishViewController
 
 
+-(IBAction)soloGame {
+
+    //DeckFunctions *deckFunctions = [[DeckFunctions alloc] init];
+    [DeckFunctions getPlayDeck];
+}
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
