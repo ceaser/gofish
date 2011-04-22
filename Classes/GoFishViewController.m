@@ -7,10 +7,18 @@
 //
 
 #import "GoFishViewController.h"
+#import "Game.h"
 
 @implementation GoFishViewController
 
 
+-(IBAction)soloGame {
+    // create game    
+    g = [Game new];
+    [g showWinner:[g startGameLoop]];
+    [g release];
+    
+}
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
