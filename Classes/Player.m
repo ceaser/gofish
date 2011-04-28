@@ -14,11 +14,25 @@
 
 @implementation Player
 
--(id)initWithPlayerID:(int)pID andPlayerName:(NSString *)pName andGameReference:(Game *)gameRef{
+-(id)initWithPlayerID:(NSInteger)pID andPlayerName:(NSString *)pName andGameReference:(Game *)gameRef{
     self = [super init];
     playerID = pID;
     playerName = pName;
     game = gameRef;
+    hand = [NSMutableArray array];
+    
+#ifndef NDEBUG
+    self.status = [NSMutableString stringWithString:@" created"];
+    [self writePlayerStatus];
+#endif   
+    return self;
+}
+
+-(id)initWithPlayerID:(NSInteger)pID andPlayerName:(NSString *)pName{
+    self = [super init];
+    playerID = pID;
+    playerName = pName;
+    //game = gameRef;
     hand = [NSMutableArray array];
     
 #ifndef NDEBUG
@@ -34,14 +48,15 @@
 //@synthesize opponent;
 @synthesize status;
 @synthesize hand;
+@synthesize game;
 
 
 
--(int)takeTurn{
+-(NSInteger)takeTurn{
 #ifndef NDEBUG
     self.status = [NSMutableString stringWithString:@" is taking turn"]; 
     [self writePlayerStatus];
-    int opponentPlayerID = 0;
+    NSInteger opponentPlayerID = 0;
 #endif 
     // pick player (excluding self)
     do {
@@ -74,18 +89,22 @@
 }
 
 
--(int)fishFor:(Suit)suit{
+-(NSInteger)fishFor:(Suit)suit{
 #ifndef NDEBUG
     self.status = [NSMutableString stringWithFormat:@" is getting fished for %@", [AppConfig suitToString:suit]];
     [self writePlayerStatus];
 #endif 
     
 
-    int suitCount = [self getSuitCount:suit];
+    NSInteger suitCount = [self getSuitCount:suit];
     
     if(suitCount > 0)
     {
         [self removeSuitFromHand:suit];
+    }
+    else
+    {
+        NSLog(@"no fish found");
     }
     return suitCount;
 }
@@ -115,12 +134,12 @@
     
 }
 
--(void)addToHandBySuit:(Suit)suit andCount:(int)count{
+-(void)addToHandBySuit:(Suit)suit andCount:(NSInteger)count{
     self.status = [NSMutableString stringWithFormat:@" is adding %d %@ to hand", count, [AppConfig suitToString:suit]];
     [self writePlayerStatus];  
     
     
-    for(int i = 0; i < count; i++)
+    for(NSInteger i = 0; i < count; i++)
     {
         Card *c = [[Card alloc] initWithSuit:suit];
         [hand addObject:c];
@@ -128,8 +147,8 @@
     }
 }
 
--(int)getSuitCount:(Suit)suit{
-    int suitCount = 0;
+-(NSInteger)getSuitCount:(Suit)suit{
+    NSInteger suitCount = 0;
     
     for(Card *c in self.hand) 
     {
@@ -144,6 +163,7 @@
 
 - (void) checkForFullSuit:(Suit)suit
 {
+
     if([self getSuitCount:suit] == 4)
     { 
         self.status = [NSMutableString stringWithFormat:@" caught all 4 %@.", [AppConfig suitToString:suit]];
@@ -161,7 +181,7 @@
 // takes a card from the deck and adds it to the players hand
 -(void)drawCardFromDeck{
     
-    Card *c = [game drawCardFromDeck];
+    Card *c = [self.game drawCardFromDeck];
     if(c != nil)
     {
         [hand addObject:c];

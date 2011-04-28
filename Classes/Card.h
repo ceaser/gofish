@@ -12,15 +12,15 @@
 
 @interface Card : NSObject {
     
-    int suitID;
+    NSInteger suitID;
     NSString *suitName;
-    
     
 }
 
-@property (nonatomic, assign) int suitID;
-@property (nonatomic, assign) NSString *suitName;
+@property (nonatomic) NSInteger suitID;
+@property (retain) NSString *suitName;
 
 -(id)initWithSuit:(Suit)suit;
 -(void)writeCard;
+-(void)assignSuitName;
 @end

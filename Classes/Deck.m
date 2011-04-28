@@ -20,7 +20,7 @@
     NSLog(@"New Deck");
     [self writeDeck];
 #endif
-    [self shuffleDeck];
+   // [self shuffleDeck];
 #ifndef NDEBUG
     NSLog(@"Shuffled Deck");
     [self writeDeck];
@@ -37,7 +37,7 @@
     { 
         Card *c = [[Card alloc] initWithSuit:(Suit)suit];
         //add 4 of each suit
-        for(int i = 0; i < 4; i++)
+        for(NSInteger i = 0; i < 4; i++)
         {
             [deck addObject:c];
         }
@@ -48,7 +48,7 @@
 
 -(void) shuffleDeck{
     
-    int n = [playDeck count];
+    NSInteger n = [playDeck count];
     while(n > 1)
     {
         NSUInteger k = arc4random() % n;

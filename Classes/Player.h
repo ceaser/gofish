@@ -20,23 +20,26 @@
     // moniker - player's nickname
     Game *game;
     NSMutableArray *hand;
-    int playerID;
+    NSInteger playerID;
+    NSInteger fishCount;
     NSString *playerName;
     NSMutableString *status;
 }
 
-@property(assign, readwrite) int playerID;
-@property(retain, readwrite) NSString *playerName;
-@property(assign, readwrite) int fishCount;
-@property(retain, readwrite) NSMutableString *status;
-@property(retain, readwrite) NSMutableArray *hand;
+@property(nonatomic) NSInteger playerID;
+@property(retain, nonatomic) NSString *playerName;
+@property(nonatomic) NSInteger fishCount;
+@property(retain, nonatomic) NSMutableString *status;
+@property(retain, nonatomic) NSMutableArray *hand;
+@property(retain, nonatomic) Game *game;
 
 -(id)initWithPlayerID:(int)pID andPlayerName:(NSString *)pName andGameReference:(Game *)gameRef;
--(int)fishFor:(Suit)getSuit;
+-(id)initWithPlayerID:(int)pID andPlayerName:(NSString *)pName;
+-(NSInteger)fishFor:(Suit)getSuit;
 -(void)drawCardFromDeck;
 -(void)writeHand;
--(int)takeTurn;
--(int)getSuitCount:(Suit)suit;
+-(NSInteger)takeTurn;
+-(NSInteger)getSuitCount:(Suit)suit;
 -(void)removeSuitFromHand:(Suit)suit;
 -(void)addToHandBySuit:(Suit)suit andCount:(int)count;
 -(void)writePlayerStatus;

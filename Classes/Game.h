@@ -24,8 +24,8 @@
     Deck *deck;
 }
 
-@property(retain, readwrite) Deck *deck;
-@property(retain, readwrite) NSMutableArray *playerList;
+@property(retain, nonatomic) Deck *deck;
+@property(retain, nonatomic) NSMutableArray *playerList;
 
 -(void) showWinner:(Player *)player;
 -(Player *) startGameLoop; 

@@ -14,7 +14,8 @@
 -(id)initWithSuit:(Suit)suit {
     self = [super init];
     suitID = suit;
-    suitName = [AppConfig suitToString:suit];
+
+    [self assignSuitName];
     
     return self;
     
@@ -26,5 +27,9 @@
 
 -(void)writeCard{
     NSLog(@"suitID: %d, suitname: %@", suitID, suitName);
+}
+
+-(void)assignSuitName{
+    self.suitName = [AppConfig suitToString:self.suitID];
 }
 @end

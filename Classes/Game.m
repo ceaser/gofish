@@ -35,7 +35,11 @@
     // will eventually want to loop and create 5 players
     for(int i = 0; i < 3; i++)
     {
+        /*
         Player *player = [[Player alloc] initWithPlayerID:i andPlayerName:@"NoName" andGameReference:self];
+         */
+        Player *player = [[Player alloc] initWithPlayerID:i andPlayerName:@"NoName"];
+        player.game = self;
         [players addObject:player];
         [player release];
     }
