@@ -15,13 +15,6 @@
 		2899E5220DE3E06400AC0155 /* GoFishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GoFishViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* GoFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GoFishViewController.m */; };
-FC6DC597136115B10001DB33 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC596136115B10001DB33 /* Deck.m */; };
-FC6DC59B136115EA0001DB33 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59A136115EA0001DB33 /* Card.m */; };
-FC6DC59E1361162C0001DB33 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59D1361162C0001DB33 /* Game.m */; };
-FC6DC5A11361164D0001DB33 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC5A01361164D0001DB33 /* Player.m */; };
-FC6DC5A4136116840001DB33 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC5A3136116840001DB33 /* AppConfig.m */; };
-FC6DC5B81361204A0001DB33 /* Chilly_Willys_Fishing_Hole.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6DC5B71361204A0001DB33 /* Chilly_Willys_Fishing_Hole.png */; };
-FC6DC5BB1361205C0001DB33 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6DC5BA1361205C0001DB33 /* images.png */; };
 		CA0C598C12E4050500AE5AC0 /* GoFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GoFishViewController.m */; };
 		CA0C598D12E4050700AE5AC0 /* GoFishAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GoFishAppDelegate.m */; };
 		CA0C598F12E4050C00AE5AC0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
@@ -37,6 +30,19 @@ FC6DC5BB1361205C0001DB33 /* images.png in Resources */ = {isa = PBXBuildFile; fi
 		CAFB39E012E410C10079AEFB /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39DC12E410C10079AEFB /* GTMUnitTestDevLog.m */; };
 		CAFB39E512E410ED0079AEFB /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39E212E410ED0079AEFB /* GTMObjC2Runtime.m */; };
 		CAFB39E612E410ED0079AEFB /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39E412E410ED0079AEFB /* GTMRegex.m */; };
+		FC6DC597136115B10001DB33 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC596136115B10001DB33 /* Deck.m */; };
+		FC6DC59B136115EA0001DB33 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59A136115EA0001DB33 /* Card.m */; };
+		FC6DC59E1361162C0001DB33 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59D1361162C0001DB33 /* Game.m */; };
+		FC6DC5A11361164D0001DB33 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC5A01361164D0001DB33 /* Player.m */; };
+		FC6DC5A4136116840001DB33 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC5A3136116840001DB33 /* AppConfig.m */; };
+		FC6DC5BB1361205C0001DB33 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6DC5BA1361205C0001DB33 /* images.png */; };
+		FC77194D136BA3690083671E /* GoFish-Concepts-home.png in Resources */ = {isa = PBXBuildFile; fileRef = FC77194C136BA3680083671E /* GoFish-Concepts-home.png */; };
+		FC7B21A2136BA6C90018AACB /* GoFish-game-background.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21A1136BA6C90018AACB /* GoFish-game-background.png */; };
+		FC7B21A5136BA7D30018AACB /* GoFish-home_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21A4136BA7D30018AACB /* GoFish-home_background.png */; };
+		FC7B21A6136BA7D30018AACB /* GoFish-home_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21A4136BA7D30018AACB /* GoFish-home_background.png */; };
+		FC7B21A8136BA8DC0018AACB /* GoFish-home_start.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21A7136BA8DC0018AACB /* GoFish-home_start.png */; };
+		FC7B21AA136BD3690018AACB /* GoFish-game-timebar.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21A9136BD3690018AACB /* GoFish-game-timebar.png */; };
+		FC7B21AC136BD5070018AACB /* GamePlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21AB136BD5070018AACB /* GamePlayView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +59,23 @@ FC6DC5BB1361205C0001DB33 /* images.png in Resources */ = {isa = PBXBuildFile; fi
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* GoFish_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoFish_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* GoFish-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoFish-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		CA0C596A12E404A000AE5AC0 /* GoFishUnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFishUnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0C596C12E404A000AE5AC0 /* GoFishUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoFishUnitTest-Info.plist"; sourceTree = "<group>"; };
+		CA4B980212E43659001B0E03 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = Frameworks/OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		CA4B987E12E438D9001B0E03 /* ExampleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTest.h; sourceTree = "<group>"; };
+		CA4B987F12E438D9001B0E03 /* ExampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTest.m; sourceTree = "<group>"; };
+		CAFB39D612E410C10079AEFB /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMIPhoneUnitTestDelegate.h; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestDelegate.h"; sourceTree = "<group>"; };
+		CAFB39D712E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestDelegate.m; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestDelegate.m"; sourceTree = "<group>"; };
+		CAFB39D812E410C10079AEFB /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestMain.m"; sourceTree = "<group>"; };
+		CAFB39D912E410C10079AEFB /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSenTestCase.h; path = "google-toolbox-for-mac/UnitTesting/GTMSenTestCase.h"; sourceTree = "<group>"; };
+		CAFB39DA12E410C10079AEFB /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSenTestCase.m; path = "google-toolbox-for-mac/UnitTesting/GTMSenTestCase.m"; sourceTree = "<group>"; };
+		CAFB39DB12E410C10079AEFB /* GTMUnitTestDevLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMUnitTestDevLog.h; path = "google-toolbox-for-mac/UnitTesting/GTMUnitTestDevLog.h"; sourceTree = "<group>"; };
+		CAFB39DC12E410C10079AEFB /* GTMUnitTestDevLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMUnitTestDevLog.m; path = "google-toolbox-for-mac/UnitTesting/GTMUnitTestDevLog.m"; sourceTree = "<group>"; };
+		CAFB39E112E410ED0079AEFB /* GTMObjC2Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMObjC2Runtime.h; path = "google-toolbox-for-mac/Foundation/GTMObjC2Runtime.h"; sourceTree = "<group>"; };
+		CAFB39E212E410ED0079AEFB /* GTMObjC2Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMObjC2Runtime.m; path = "google-toolbox-for-mac/Foundation/GTMObjC2Runtime.m"; sourceTree = "<group>"; };
+		CAFB39E312E410ED0079AEFB /* GTMRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMRegex.h; path = "google-toolbox-for-mac/Foundation/GTMRegex.h"; sourceTree = "<group>"; };
+		CAFB39E412E410ED0079AEFB /* GTMRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMRegex.m; path = "google-toolbox-for-mac/Foundation/GTMRegex.m"; sourceTree = "<group>"; };
+		CAFB39E712E411140079AEFB /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = "google-toolbox-for-mac/GTMDefines.h"; sourceTree = "<group>"; };
 		FC6DC595136115B10001DB33 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = ../../GoFish/Classes/Deck.h; sourceTree = "<group>"; };
 		FC6DC596136115B10001DB33 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = ../../GoFish/Classes/Deck.m; sourceTree = "<group>"; };
 		FC6DC599136115EA0001DB33 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../../GoFish/Classes/Card.h; sourceTree = "<group>"; };
@@ -63,25 +86,13 @@ FC6DC5BB1361205C0001DB33 /* images.png in Resources */ = {isa = PBXBuildFile; fi
 		FC6DC5A01361164D0001DB33 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = ../../GoFish/Classes/Player.m; sourceTree = "<group>"; };
 		FC6DC5A2136116830001DB33 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppConfig.h; path = ../../GoFish/Classes/AppConfig.h; sourceTree = "<group>"; };
 		FC6DC5A3136116840001DB33 /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppConfig.m; path = ../../GoFish/Classes/AppConfig.m; sourceTree = "<group>"; };
-		FC6DC5B71361204A0001DB33 /* Chilly_Willys_Fishing_Hole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chilly_Willys_Fishing_Hole.png; sourceTree = "<group>"; };
 		FC6DC5BA1361205C0001DB33 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
-			CA0C596A12E404A000AE5AC0 /* GoFishUnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFishUnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-			CA0C596C12E404A000AE5AC0 /* GoFishUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoFishUnitTest-Info.plist"; sourceTree = "<group>"; };
-			CA4B980212E43659001B0E03 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = Frameworks/OCHamcrestIOS.framework; sourceTree = "<group>"; };
-			CA4B987E12E438D9001B0E03 /* ExampleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTest.h; sourceTree = "<group>"; };
-			CA4B987F12E438D9001B0E03 /* ExampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTest.m; sourceTree = "<group>"; };
-			CAFB39D612E410C10079AEFB /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMIPhoneUnitTestDelegate.h; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestDelegate.h"; sourceTree = "<group>"; };
-			CAFB39D712E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestDelegate.m; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestDelegate.m"; sourceTree = "<group>"; };
-			CAFB39D812E410C10079AEFB /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = "google-toolbox-for-mac/UnitTesting/GTMIPhoneUnitTestMain.m"; sourceTree = "<group>"; };
-			CAFB39D912E410C10079AEFB /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSenTestCase.h; path = "google-toolbox-for-mac/UnitTesting/GTMSenTestCase.h"; sourceTree = "<group>"; };
-			CAFB39DA12E410C10079AEFB /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSenTestCase.m; path = "google-toolbox-for-mac/UnitTesting/GTMSenTestCase.m"; sourceTree = "<group>"; };
-			CAFB39DB12E410C10079AEFB /* GTMUnitTestDevLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMUnitTestDevLog.h; path = "google-toolbox-for-mac/UnitTesting/GTMUnitTestDevLog.h"; sourceTree = "<group>"; };
-			CAFB39DC12E410C10079AEFB /* GTMUnitTestDevLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMUnitTestDevLog.m; path = "google-toolbox-for-mac/UnitTesting/GTMUnitTestDevLog.m"; sourceTree = "<group>"; };
-			CAFB39E112E410ED0079AEFB /* GTMObjC2Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMObjC2Runtime.h; path = "google-toolbox-for-mac/Foundation/GTMObjC2Runtime.h"; sourceTree = "<group>"; };
-			CAFB39E212E410ED0079AEFB /* GTMObjC2Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMObjC2Runtime.m; path = "google-toolbox-for-mac/Foundation/GTMObjC2Runtime.m"; sourceTree = "<group>"; };
-			CAFB39E312E410ED0079AEFB /* GTMRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMRegex.h; path = "google-toolbox-for-mac/Foundation/GTMRegex.h"; sourceTree = "<group>"; };
-			CAFB39E412E410ED0079AEFB /* GTMRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMRegex.m; path = "google-toolbox-for-mac/Foundation/GTMRegex.m"; sourceTree = "<group>"; };
-			CAFB39E712E411140079AEFB /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = "google-toolbox-for-mac/GTMDefines.h"; sourceTree = "<group>"; };
+		FC77194C136BA3680083671E /* GoFish-Concepts-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoFish-Concepts-home.png"; sourceTree = "<group>"; };
+		FC7B21A1136BA6C90018AACB /* GoFish-game-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoFish-game-background.png"; sourceTree = "<group>"; };
+		FC7B21A4136BA7D30018AACB /* GoFish-home_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoFish-home_background.png"; sourceTree = "<group>"; };
+		FC7B21A7136BA8DC0018AACB /* GoFish-home_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoFish-home_start.png"; sourceTree = "<group>"; };
+		FC7B21A9136BD3690018AACB /* GoFish-game-timebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoFish-game-timebar.png"; sourceTree = "<group>"; };
+		FC7B21AB136BD5070018AACB /* GamePlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GamePlayView.xib; path = ../GoFish/GamePlayView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,12 +176,17 @@ FC6DC5BB1361205C0001DB33 /* images.png in Resources */ = {isa = PBXBuildFile; fi
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FC7B21A9136BD3690018AACB /* GoFish-game-timebar.png */,
+				FC7B21A7136BA8DC0018AACB /* GoFish-home_start.png */,
+				FC7B21A4136BA7D30018AACB /* GoFish-home_background.png */,
+				FC7B21A1136BA6C90018AACB /* GoFish-game-background.png */,
+				FC77194C136BA3680083671E /* GoFish-Concepts-home.png */,
 				FC6DC5BA1361205C0001DB33 /* images.png */,
-				FC6DC5B71361204A0001DB33 /* Chilly_Willys_Fishing_Hole.png */,
 				2899E5210DE3E06400AC0155 /* GoFishViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* GoFish-Info.plist */,
 				CA0C596C12E404A000AE5AC0 /* GoFishUnitTest-Info.plist */,
+				FC7B21AB136BD5070018AACB /* GamePlayView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -284,8 +300,13 @@ FC6DC5BB1361205C0001DB33 /* images.png in Resources */ = {isa = PBXBuildFile; fi
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* GoFishViewController.xib in Resources */,
-				FC6DC5B81361204A0001DB33 /* Chilly_Willys_Fishing_Hole.png in Resources */,
 				FC6DC5BB1361205C0001DB33 /* images.png in Resources */,
+				FC77194D136BA3690083671E /* GoFish-Concepts-home.png in Resources */,
+				FC7B21A2136BA6C90018AACB /* GoFish-game-background.png in Resources */,
+				FC7B21A5136BA7D30018AACB /* GoFish-home_background.png in Resources */,
+				FC7B21A8136BA8DC0018AACB /* GoFish-home_start.png in Resources */,
+				FC7B21AA136BD3690018AACB /* GoFish-game-timebar.png in Resources */,
+				FC7B21AC136BD5070018AACB /* GamePlayView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +316,7 @@ FC6DC5BB1361205C0001DB33 /* images.png in Resources */ = {isa = PBXBuildFile; fi
 			files = (
 				CA0C598F12E4050C00AE5AC0 /* MainWindow.xib in Resources */,
 				CA0C599012E4050D00AE5AC0 /* GoFishViewController.xib in Resources */,
+				FC7B21A6136BA7D30018AACB /* GoFish-home_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
