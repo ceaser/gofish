@@ -38,6 +38,7 @@
 #ifndef NDEBUG
     self.status = [NSMutableString stringWithString:@" created"];
     [self writePlayerStatus];
+    [self verifyHand];
 #endif   
     return self;
 }
@@ -45,18 +46,24 @@
 @synthesize playerID;
 @synthesize playerName;
 @synthesize fishCount;
-//@synthesize opponent;
 @synthesize status;
 @synthesize hand;
 @synthesize game;
 
 
-
+/*
+    1.  Pick random opponent (not self)
+    2.  Pick random suit (owned by self)
+    3.  Get cards of the picked suit from the picked opponent
+    4.  Add cards to hand if any were found
+    5.  Draw card from deck if no cards were found
+*/
 -(NSInteger)takeTurn{
 #ifndef NDEBUG
+    [self verifyHand];
     self.status = [NSMutableString stringWithString:@" is taking turn"]; 
     [self writePlayerStatus];
-    NSInteger opponentPlayerID = 0;
+    NSInteger opponentPlayerID = -1;
 #endif 
     // pick player (excluding self)
     do {
@@ -106,6 +113,7 @@
     {
         NSLog(@"no fish found");
     }
+    [self verifyHand];
     return suitCount;
 }
 
@@ -118,6 +126,7 @@
     NSMutableArray *removeCards = [NSMutableArray new];
     for(Card *c in self.hand)
     {
+        [self verifyHand];
         if(c.suitName == [AppConfig suitToString:suit])
         {
             [removeCards addObject:c];
@@ -136,7 +145,8 @@
 
 -(void)addToHandBySuit:(Suit)suit andCount:(NSInteger)count{
     self.status = [NSMutableString stringWithFormat:@" is adding %d %@ to hand", count, [AppConfig suitToString:suit]];
-    [self writePlayerStatus];  
+    [self writePlayerStatus];
+    [self writeHand];
     
     
     for(NSInteger i = 0; i < count; i++)
@@ -144,6 +154,7 @@
         Card *c = [[Card alloc] initWithSuit:suit];
         [hand addObject:c];
         [c release];
+        [self verifyHand];
     }
 }
 
@@ -211,5 +222,22 @@
         [c writeCard];
     }
     
+}
+
+
+-(void)verifyHand{
+    for(NSInteger i = 0; i < [self.hand count]; i++)
+    {
+        if(![[self.hand objectAtIndex:i] isKindOfClass:[Card class]])
+        {
+            self.status = [NSMutableString stringWithFormat:@"Hand if forked up and index %i", i];
+        }
+        else
+        {
+            self.status = [NSMutableString stringWithString:@"Hand check is GOOD"];
+        }
+        
+    }
+    [self writePlayerStatus];
 }
 @end
