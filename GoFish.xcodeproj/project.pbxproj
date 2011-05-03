@@ -15,6 +15,11 @@
 		2899E5220DE3E06400AC0155 /* GoFishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GoFishViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* GoFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GoFishViewController.m */; };
+		CA045EC4136FB5C2009C5D60 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59D1361162C0001DB33 /* Game.m */; };
+		CA045EC5136FB5D5009C5D60 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC596136115B10001DB33 /* Deck.m */; };
+		CA045EC6136FB5D5009C5D60 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59A136115EA0001DB33 /* Card.m */; };
+		CA045EC7136FB5D5009C5D60 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC5A01361164D0001DB33 /* Player.m */; };
+		CA045EC8136FB5D5009C5D60 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC5A3136116840001DB33 /* AppConfig.m */; };
 		CA0C598C12E4050500AE5AC0 /* GoFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GoFishViewController.m */; };
 		CA0C598D12E4050700AE5AC0 /* GoFishAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GoFishAppDelegate.m */; };
 		CA0C598F12E4050C00AE5AC0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
@@ -358,12 +363,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA045EC5136FB5D5009C5D60 /* Deck.m in Sources */,
+				CA045EC6136FB5D5009C5D60 /* Card.m in Sources */,
+				CA045EC7136FB5D5009C5D60 /* Player.m in Sources */,
+				CA045EC8136FB5D5009C5D60 /* AppConfig.m in Sources */,
 				CA0C598C12E4050500AE5AC0 /* GoFishViewController.m in Sources */,
 				CA0C598D12E4050700AE5AC0 /* GoFishAppDelegate.m in Sources */,
 				CAFB39DD12E410C10079AEFB /* GTMIPhoneUnitTestDelegate.m in Sources */,
 				CAFB39DE12E410C10079AEFB /* GTMIPhoneUnitTestMain.m in Sources */,
 				CAFB39DF12E410C10079AEFB /* GTMSenTestCase.m in Sources */,
 				CAFB39E012E410C10079AEFB /* GTMUnitTestDevLog.m in Sources */,
+				CA045EC4136FB5C2009C5D60 /* Game.m in Sources */,
 				CAFB39E512E410ED0079AEFB /* GTMObjC2Runtime.m in Sources */,
 				CAFB39E612E410ED0079AEFB /* GTMRegex.m in Sources */,
 				CA4B988012E438D9001B0E03 /* ExampleTest.m in Sources */,
