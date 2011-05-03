@@ -7,20 +7,29 @@
 //
 
 #import "Card.h"
+#import "AppConfig.h"
 
 
 @implementation Card
-+(id) init {
+-(id)initWithSuit:(Suit)suit {
     self = [super init];
+    suitID = suit;
+
+    [self assignSuitName];
     
     return self;
     
 }
-    @synthesize suitID;
-    @synthesize suitName;      
 
-+(void)writeCard:(Card *)card{
-    NSLog(@"suitID: %i  suitName: %@", card.suitID, card.suitName);    
+@synthesize suitID;
+@synthesize suitName;      
+
+
+-(void)writeCard{
+    NSLog(@"suitID: %d, suitname: %@", suitID, suitName);
 }
 
+-(void)assignSuitName{
+    self.suitName = [AppConfig suitToString:self.suitID];
+}
 @end

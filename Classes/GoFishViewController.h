@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Game.h"
 
 @interface GoFishViewController : UIViewController {
     
+    Game *g;
+}
 
-    };
-    
--(IBAction)soloGame; 
-    
+-(IBAction)soloGame;
+
 @end

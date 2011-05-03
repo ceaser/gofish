@@ -7,15 +7,17 @@
 //
 
 #import "GoFishViewController.h"
-#import "DeckFunctions.h"
+#import "Game.h"
 
 @implementation GoFishViewController
 
 
 -(IBAction)soloGame {
-
-    //DeckFunctions *deckFunctions = [[DeckFunctions alloc] init];
-    [DeckFunctions getPlayDeck];
+    // create game    
+    g = [Game new];
+    [g showWinner:[g startGameLoop]];
+    [g release];
+    
 }
 
 /*

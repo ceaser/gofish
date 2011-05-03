@@ -7,20 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AppConfig.h"
 
 
 @interface Card : NSObject {
-//card is just an instance of a suit?
-//card has a suit
-//card has an ID? is one needed?
-    int suitID;
+    
+    NSInteger suitID;
     NSString *suitName;
     
 }
 
-@property (nonatomic, assign) int suitID;
-@property (nonatomic, assign) NSString *suitName;
+@property (nonatomic) NSInteger suitID;
+@property (retain) NSString *suitName;
 
-+(void)writeCard:(Card *)card;
-
+-(id)initWithSuit:(Suit)suit;
+-(void)writeCard;
+-(void)assignSuitName;
 @end

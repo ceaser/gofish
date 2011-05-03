@@ -30,11 +30,19 @@
 		CAFB39E012E410C10079AEFB /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39DC12E410C10079AEFB /* GTMUnitTestDevLog.m */; };
 		CAFB39E512E410ED0079AEFB /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39E212E410ED0079AEFB /* GTMObjC2Runtime.m */; };
 		CAFB39E612E410ED0079AEFB /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39E412E410ED0079AEFB /* GTMRegex.m */; };
-		FC8EB2CB134BD0FD00D252B3 /* Chilly_Willys_Fishing_Hole.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8EB2CA134BD0FD00D252B3 /* Chilly_Willys_Fishing_Hole.png */; };
-		FC8EB2CE134BD4D300D252B3 /* DeckFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8EB2CD134BD4D300D252B3 /* DeckFunctions.m */; };
-		FC8EB2D1134BD9E500D252B3 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8EB2D0134BD9E500D252B3 /* Card.m */; };
-		FC8EB2D7134C010A00D252B3 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8EB2D6134C010A00D252B3 /* Game.m */; };
-		FC8EB2DD134C025700D252B3 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8EB2DC134C025700D252B3 /* Player.m */; };
+		FC6DC597136115B10001DB33 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC596136115B10001DB33 /* Deck.m */; };
+		FC6DC59B136115EA0001DB33 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59A136115EA0001DB33 /* Card.m */; };
+		FC6DC59E1361162C0001DB33 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59D1361162C0001DB33 /* Game.m */; };
+		FC6DC5A11361164D0001DB33 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC5A01361164D0001DB33 /* Player.m */; };
+		FC6DC5A4136116840001DB33 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC5A3136116840001DB33 /* AppConfig.m */; };
+		FC6DC5BB1361205C0001DB33 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6DC5BA1361205C0001DB33 /* images.png */; };
+		FC77194D136BA3690083671E /* GoFish-Concepts-home.png in Resources */ = {isa = PBXBuildFile; fileRef = FC77194C136BA3680083671E /* GoFish-Concepts-home.png */; };
+		FC7B21A2136BA6C90018AACB /* GoFish-game-background.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21A1136BA6C90018AACB /* GoFish-game-background.png */; };
+		FC7B21A5136BA7D30018AACB /* GoFish-home_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21A4136BA7D30018AACB /* GoFish-home_background.png */; };
+		FC7B21A6136BA7D30018AACB /* GoFish-home_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21A4136BA7D30018AACB /* GoFish-home_background.png */; };
+		FC7B21A8136BA8DC0018AACB /* GoFish-home_start.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21A7136BA8DC0018AACB /* GoFish-home_start.png */; };
+		FC7B21AA136BD3690018AACB /* GoFish-game-timebar.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21A9136BD3690018AACB /* GoFish-game-timebar.png */; };
+		FC7B21AC136BD5070018AACB /* GamePlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7B21AB136BD5070018AACB /* GamePlayView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,15 +76,23 @@
 		CAFB39E312E410ED0079AEFB /* GTMRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMRegex.h; path = "google-toolbox-for-mac/Foundation/GTMRegex.h"; sourceTree = "<group>"; };
 		CAFB39E412E410ED0079AEFB /* GTMRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMRegex.m; path = "google-toolbox-for-mac/Foundation/GTMRegex.m"; sourceTree = "<group>"; };
 		CAFB39E712E411140079AEFB /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = "google-toolbox-for-mac/GTMDefines.h"; sourceTree = "<group>"; };
-		FC8EB2CA134BD0FD00D252B3 /* Chilly_Willys_Fishing_Hole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chilly_Willys_Fishing_Hole.png; sourceTree = "<group>"; };
-		FC8EB2CC134BD4D300D252B3 /* DeckFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckFunctions.h; sourceTree = "<group>"; };
-		FC8EB2CD134BD4D300D252B3 /* DeckFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckFunctions.m; sourceTree = "<group>"; };
-		FC8EB2CF134BD9E500D252B3 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
-		FC8EB2D0134BD9E500D252B3 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
-		FC8EB2D5134C010A00D252B3 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
-		FC8EB2D6134C010A00D252B3 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
-		FC8EB2DB134C025700D252B3 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		FC8EB2DC134C025700D252B3 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		FC6DC595136115B10001DB33 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = ../../GoFish/Classes/Deck.h; sourceTree = "<group>"; };
+		FC6DC596136115B10001DB33 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = ../../GoFish/Classes/Deck.m; sourceTree = "<group>"; };
+		FC6DC599136115EA0001DB33 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../../GoFish/Classes/Card.h; sourceTree = "<group>"; };
+		FC6DC59A136115EA0001DB33 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = ../../GoFish/Classes/Card.m; sourceTree = "<group>"; };
+		FC6DC59C1361162C0001DB33 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../../GoFish/Classes/Game.h; sourceTree = "<group>"; };
+		FC6DC59D1361162C0001DB33 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../../GoFish/Classes/Game.m; sourceTree = "<group>"; };
+		FC6DC59F1361164D0001DB33 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../../GoFish/Classes/Player.h; sourceTree = "<group>"; };
+		FC6DC5A01361164D0001DB33 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = ../../GoFish/Classes/Player.m; sourceTree = "<group>"; };
+		FC6DC5A2136116830001DB33 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppConfig.h; path = ../../GoFish/Classes/AppConfig.h; sourceTree = "<group>"; };
+		FC6DC5A3136116840001DB33 /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppConfig.m; path = ../../GoFish/Classes/AppConfig.m; sourceTree = "<group>"; };
+		FC6DC5BA1361205C0001DB33 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		FC77194C136BA3680083671E /* GoFish-Concepts-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoFish-Concepts-home.png"; sourceTree = "<group>"; };
+		FC7B21A1136BA6C90018AACB /* GoFish-game-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoFish-game-background.png"; sourceTree = "<group>"; };
+		FC7B21A4136BA7D30018AACB /* GoFish-home_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoFish-home_background.png"; sourceTree = "<group>"; };
+		FC7B21A7136BA8DC0018AACB /* GoFish-home_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoFish-home_start.png"; sourceTree = "<group>"; };
+		FC7B21A9136BD3690018AACB /* GoFish-game-timebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoFish-game-timebar.png"; sourceTree = "<group>"; };
+		FC7B21AB136BD5070018AACB /* GamePlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GamePlayView.xib; path = ../GoFish/GamePlayView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,14 +127,16 @@
 				1D3623250D0F684500981E51 /* GoFishAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* GoFishViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* GoFishViewController.m */,
-				FC8EB2CC134BD4D300D252B3 /* DeckFunctions.h */,
-				FC8EB2CD134BD4D300D252B3 /* DeckFunctions.m */,
-				FC8EB2CF134BD9E500D252B3 /* Card.h */,
-				FC8EB2D0134BD9E500D252B3 /* Card.m */,
-				FC8EB2D5134C010A00D252B3 /* Game.h */,
-				FC8EB2D6134C010A00D252B3 /* Game.m */,
-				FC8EB2DB134C025700D252B3 /* Player.h */,
-				FC8EB2DC134C025700D252B3 /* Player.m */,
+				FC6DC595136115B10001DB33 /* Deck.h */,
+				FC6DC596136115B10001DB33 /* Deck.m */,
+				FC6DC599136115EA0001DB33 /* Card.h */,
+				FC6DC59A136115EA0001DB33 /* Card.m */,
+				FC6DC59C1361162C0001DB33 /* Game.h */,
+				FC6DC59D1361162C0001DB33 /* Game.m */,
+				FC6DC59F1361164D0001DB33 /* Player.h */,
+				FC6DC5A01361164D0001DB33 /* Player.m */,
+				FC6DC5A2136116830001DB33 /* AppConfig.h */,
+				FC6DC5A3136116840001DB33 /* AppConfig.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -158,11 +176,17 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FC8EB2CA134BD0FD00D252B3 /* Chilly_Willys_Fishing_Hole.png */,
+				FC7B21A9136BD3690018AACB /* GoFish-game-timebar.png */,
+				FC7B21A7136BA8DC0018AACB /* GoFish-home_start.png */,
+				FC7B21A4136BA7D30018AACB /* GoFish-home_background.png */,
+				FC7B21A1136BA6C90018AACB /* GoFish-game-background.png */,
+				FC77194C136BA3680083671E /* GoFish-Concepts-home.png */,
+				FC6DC5BA1361205C0001DB33 /* images.png */,
 				2899E5210DE3E06400AC0155 /* GoFishViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* GoFish-Info.plist */,
 				CA0C596C12E404A000AE5AC0 /* GoFishUnitTest-Info.plist */,
+				FC7B21AB136BD5070018AACB /* GamePlayView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -276,7 +300,13 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* GoFishViewController.xib in Resources */,
-				FC8EB2CB134BD0FD00D252B3 /* Chilly_Willys_Fishing_Hole.png in Resources */,
+				FC6DC5BB1361205C0001DB33 /* images.png in Resources */,
+				FC77194D136BA3690083671E /* GoFish-Concepts-home.png in Resources */,
+				FC7B21A2136BA6C90018AACB /* GoFish-game-background.png in Resources */,
+				FC7B21A5136BA7D30018AACB /* GoFish-home_background.png in Resources */,
+				FC7B21A8136BA8DC0018AACB /* GoFish-home_start.png in Resources */,
+				FC7B21AA136BD3690018AACB /* GoFish-game-timebar.png in Resources */,
+				FC7B21AC136BD5070018AACB /* GamePlayView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +316,7 @@
 			files = (
 				CA0C598F12E4050C00AE5AC0 /* MainWindow.xib in Resources */,
 				CA0C599012E4050D00AE5AC0 /* GoFishViewController.xib in Resources */,
+				FC7B21A6136BA7D30018AACB /* GoFish-home_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,10 +346,11 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* GoFishAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* GoFishViewController.m in Sources */,
-				FC8EB2CE134BD4D300D252B3 /* DeckFunctions.m in Sources */,
-				FC8EB2D1134BD9E500D252B3 /* Card.m in Sources */,
-				FC8EB2D7134C010A00D252B3 /* Game.m in Sources */,
-				FC8EB2DD134C025700D252B3 /* Player.m in Sources */,
+				FC6DC597136115B10001DB33 /* Deck.m in Sources */,
+				FC6DC59B136115EA0001DB33 /* Card.m in Sources */,
+				FC6DC59E1361162C0001DB33 /* Game.m in Sources */,
+				FC6DC5A11361164D0001DB33 /* Player.m in Sources */,
+				FC6DC5A4136116840001DB33 /* AppConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
