@@ -39,13 +39,11 @@
     assertThat(string1, equalTo(string2));
 }
 
-#else                           // all code under test must be linked into the Unit Test bundle
-
+#else
 - (void) testMath
-{    
+{
     STAssertTrue((1+1)==2, @"Compiler isn't feeling well today :-(" );
 }
-
 
 #endif
 

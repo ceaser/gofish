@@ -15,6 +15,8 @@
 		2899E5220DE3E06400AC0155 /* GoFishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GoFishViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* GoFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GoFishViewController.m */; };
+		7D025960136FE10800A986A0 /* CardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D02595E136FE10800A986A0 /* CardTest.m */; };
+		7D40A14E1375070100FC36FF /* DeckTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D40A14D1375070100FC36FF /* DeckTest.m */; };
 		CA045EC4136FB5C2009C5D60 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59D1361162C0001DB33 /* Game.m */; };
 		CA045EC5136FB5D5009C5D60 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC596136115B10001DB33 /* Deck.m */; };
 		CA045EC6136FB5D5009C5D60 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59A136115EA0001DB33 /* Card.m */; };
@@ -63,6 +65,10 @@
 		28D7ACF70DDB3853001CB0EB /* GoFishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoFishViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* GoFish_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoFish_Prefix.pch; sourceTree = "<group>"; };
+		7D02595D136FE10800A986A0 /* CardTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTest.h; sourceTree = "<group>"; };
+		7D02595E136FE10800A986A0 /* CardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTest.m; sourceTree = "<group>"; };
+		7D40A14C1375070100FC36FF /* DeckTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckTest.h; sourceTree = "<group>"; };
+		7D40A14D1375070100FC36FF /* DeckTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckTest.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* GoFish-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoFish-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		CA0C596A12E404A000AE5AC0 /* GoFishUnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFishUnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0C596C12E404A000AE5AC0 /* GoFishUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoFishUnitTest-Info.plist"; sourceTree = "<group>"; };
@@ -212,6 +218,10 @@
 			children = (
 				CA4B987E12E438D9001B0E03 /* ExampleTest.h */,
 				CA4B987F12E438D9001B0E03 /* ExampleTest.m */,
+				7D02595D136FE10800A986A0 /* CardTest.h */,
+				7D02595E136FE10800A986A0 /* CardTest.m */,
+				7D40A14C1375070100FC36FF /* DeckTest.h */,
+				7D40A14D1375070100FC36FF /* DeckTest.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -377,6 +387,8 @@
 				CAFB39E512E410ED0079AEFB /* GTMObjC2Runtime.m in Sources */,
 				CAFB39E612E410ED0079AEFB /* GTMRegex.m in Sources */,
 				CA4B988012E438D9001B0E03 /* ExampleTest.m in Sources */,
+				7D025960136FE10800A986A0 /* CardTest.m in Sources */,
+				7D40A14E1375070100FC36FF /* DeckTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

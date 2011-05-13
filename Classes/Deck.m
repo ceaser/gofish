@@ -13,18 +13,22 @@
 
 @implementation Deck
 
--(id) init {
+-(id)initWithShuffle:(BOOL)shuffle {
     self = [super init];
     [self createCards];
 #ifndef NDEBUG
     NSLog(@"New Deck");
     [self writeDeck];
 #endif
-   // [self shuffleDeck];
+    if(shuffle == YES)
+    {
+        [self shuffleDeck];
 #ifndef NDEBUG
-    NSLog(@"Shuffled Deck");
-    [self writeDeck];
-#endif
+        NSLog(@"Shuffled Deck");
+        [self writeDeck];
+#endif    
+    }
+    
     return self;
 }
 
@@ -43,6 +47,7 @@
         }
         playDeck = deck;
         [c release];
+        c = nil;
     }
 }
 
@@ -64,8 +69,7 @@
     }
 }
 
--(Card *) dealCard
-{
+-(Card *) dealCard{
     if([self.playDeck count] > 0)
     {
         Card *c = [playDeck objectAtIndex:(0)];

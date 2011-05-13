@@ -44,6 +44,6 @@
 -(void)addToHandBySuit:(Suit)suit andCount:(int)count;
 -(void)writePlayerStatus;
 -(void)checkForFullSuit:(Suit)suit;
-
+-(void)verifyHand;
 @end
 

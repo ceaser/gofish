@@ -25,6 +25,7 @@
 
 @interface Deck()
 
+-(id)initWithShuffle:(BOOL)shuffle;
 -(void) writeDeck;    
 -(void) shuffleDeck;
 -(void) createCards;
