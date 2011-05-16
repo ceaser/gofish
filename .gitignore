@@ -1,0 +1,9 @@
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.pbxuser
+build/*
+*/xcuserdata/*
+.DS_Store
+GoFish.xcodeproj/project.xcworkspace/*
+GoFish.xcodeproj/project.xcworkspace/contents.xcworkspacedata/*
+
+
