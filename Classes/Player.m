@@ -158,11 +158,9 @@
         Card *c = [[Card alloc] initWithSuit:suit];
         [hand addObject:c];
         [c release];
-<<<<<<< HEAD
         c = nil;
-=======
         [self verifyHand];
->>>>>>> 8633c7714ee825b662136690c51470e48a5ba657
+
     }
     [self verifyHand];
 }
@@ -235,32 +233,19 @@
     
 }
 
-<<<<<<< HEAD
+
 -(void)verifyHand
 {
-=======
 
--(void)verifyHand{
->>>>>>> 8633c7714ee825b662136690c51470e48a5ba657
     for(NSInteger i = 0; i < [self.hand count]; i++)
     {
         if(![[self.hand objectAtIndex:i] isKindOfClass:[Card class]])
         {
-<<<<<<< HEAD
             self.status = [NSMutableString stringWithFormat:@" has a bad card at index %d", i]; 
             [self writePlayerStatus];
         }
     }
-=======
-            self.status = [NSMutableString stringWithFormat:@"Hand if forked up and index %i", i];
-        }
-        else
-        {
-            self.status = [NSMutableString stringWithString:@"Hand check is GOOD"];
-        }
-        
-    }
-    [self writePlayerStatus];
->>>>>>> 8633c7714ee825b662136690c51470e48a5ba657
+
+
 }
 @end
