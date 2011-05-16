@@ -3,3 +3,5 @@
 build/*
 */xcuserdata/*
 .DS_Store
+GoFish.xcodeproj/project.xcworkspace/*
+
