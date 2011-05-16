@@ -30,7 +30,11 @@
     NSMutableArray *players = [NSMutableArray array];
     
     // will eventually want to loop and create 5 players
+<<<<<<< HEAD
     for(int i = 0; i < 5; i++)
+=======
+    for(int i = 0; i < 2; i++)
+>>>>>>> 8633c7714ee825b662136690c51470e48a5ba657
     {
         Player *player = [[Player alloc] initWithPlayerID:i andPlayerName:@"NoName"];
         player.game = self;
