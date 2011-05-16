@@ -5,3 +5,5 @@ build/*
 /test-reports
 /coverage
 .rvmrc
+GoFish.xcodeproj/xcuserdata/*
+*/xcuserdata/*
