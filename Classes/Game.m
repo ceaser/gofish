@@ -19,7 +19,7 @@
 #ifndef NDEBUG
     NSLog(@"Game Initialized");
 #endif
-    deck = [[Deck alloc] initWithShuffle:NO];
+    deck = [[Deck alloc] initWithShuffle:YES]; // can pass in "NO" if the deck should not be shuffled.
     return self;
 } 
 
@@ -30,15 +30,7 @@
     NSMutableArray *players = [NSMutableArray array];
     
     // will eventually want to loop and create 5 players
-<<<<<<< HEAD
-<<<<<<< HEAD
     for(int i = 0; i < 5; i++)
-=======
-    for(int i = 0; i < 2; i++)
->>>>>>> 8633c7714ee825b662136690c51470e48a5ba657
-=======
-    for(int i = 0; i < 2; i++)
->>>>>>> dev
     {
         Player *player = [[Player alloc] initWithPlayerID:i andPlayerName:@"NoName"];
         player.game = self;

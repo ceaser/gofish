@@ -37,15 +37,10 @@
 
 -(void)testCreateCards
 {
-    id card = [OCMockObject mockForClass:[Card class]];
-    
-    
-    //[card andReturn:c];
     
     for(NSInteger i = 0; i < [deckNotShuffled.playDeck count]; i++)
     {
-       // STAssertEqualObjects([deckNotShuffled.playDeck objectAtIndex:(i)], card, [NSString stringWithFormat:@"Object at index %i is not a card", i]);
-        STAssertEqualObjects([deckNotShuffled.playDeck objectAtIndex:(i)], card, [NSString stringWithFormat:@"Object at index %i is not a card", i]);
+        STAssertTrue([[deckNotShuffled.playDeck objectAtIndex:(i)] isKindOfClass: [Card class]], [NSString stringWithFormat:@"Object at index %i is not a card", i]);
     }
     
 }
@@ -53,7 +48,8 @@
 
 - (void)testPlayDeckFullyPopulated
 {
-    
+    STAssertTrue([deckShuffled count] == 4 * FlyingFish, [NSString stringWithFormat:@"The deckShuffled Mutable Array contains less than %d cards.", 4 * FlyingFish]);
+    STAssertTrue([deckNotShuffled count] == 4 * FlyingFish, [NSString stringWithFormat:@"The deckShuffled Mutable Array contains less than %d cards.", 4 * FlyingFish]);
 }
 
 
@@ -73,7 +69,6 @@
 {
     STAssertTrue((1+1)==2, @"Compiler isn't feeling well today :-(" );
 }
-
 #endif
 
 

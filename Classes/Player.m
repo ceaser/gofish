@@ -59,6 +59,7 @@
     5.  Draw card from deck if no cards were found
 */
 -(NSInteger)takeTurn{
+
 #ifndef NDEBUG
     [self verifyHand];
     self.status = [NSMutableString stringWithString:@" is taking turn"]; 

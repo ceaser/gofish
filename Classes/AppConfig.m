@@ -22,7 +22,7 @@
         case SwordFish:
             result = @"SwordFish";
             break;
-  /*       case ParrotFish:
+        case ParrotFish:
             result = @"ParrotFish";
             break;
         case GoldFish:
@@ -34,10 +34,10 @@
         case CatFish:
             result = @"CatFish";
             break;
-   */       case FlyingFish:
+        case FlyingFish:
             result = @"FlyingFish";
             break;
-
+            
         default:
             [NSException raise:NSGenericException format:@"Problem -> Unexpected suit type."];
     }
