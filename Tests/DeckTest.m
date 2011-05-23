@@ -37,18 +37,15 @@
 
 -(void)testCreateCards
 {
-    id card = [OCMockObject mockForClass:[Card class]];
-    
-    
-    //[card andReturn:c];
     
     for(NSInteger i = 0; i < [deckNotShuffled.playDeck count]; i++)
     {
-       // STAssertEqualObjects([deckNotShuffled.playDeck objectAtIndex:(i)], card, [NSString stringWithFormat:@"Object at index %i is not a card", i]);
-        STAssertEqualObjects([deckNotShuffled.playDeck objectAtIndex:(i)], card, [NSString stringWithFormat:@"Object at index %i is not a card", i]);
+       STAssertEqualObjects(c, [deckNotShuffled.playDeck objectAtIndex:(0)], [NSString stringWithFormat:@"Object at index %i is not a card", i]);
+        //STAssertEqualObjects([deckNotShuffled.playDeck objectAtIndex:1], c, [NSString stringWithFormat:@"Object at index %i is not a card", i]);
     }
     
 }
+
 
 
 - (void)testPlayDeckFullyPopulated
