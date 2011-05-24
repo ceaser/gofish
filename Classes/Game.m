@@ -29,11 +29,10 @@
 -(void)createPlayers{
     NSMutableArray *players = [NSMutableArray array];
     
-
     for(int i = 0; i < 5; i++)
     {
-        Player *player = [[Player alloc] initWithPlayerID:i andPlayerName:@"NoName"];
-        player.game = self;
+        Player *player = [[Player alloc] initWithPlayerID:i andPlayerName:@"Test Player" andGameReference:self];
+        //player.game = self;
         [players addObject:player];
         [player release];
         player = nil;

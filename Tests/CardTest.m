@@ -16,16 +16,14 @@
 @implementation CardTest
 
 #if USE_APPLICATION_UNIT_TEST     // all code under test is in the iPhone Application
--(void)setUp
+- (void)setUp
 {
     c = [[Card alloc] initWithSuit:ClownFish];
 }
 
-- (void)testCardCreation {
-    
-    
+- (void)testCardCreation 
+{
     STAssertTrue(c.suitName == @"ClownFish", @"Card was not created correctly; Bad .suitName" );
-    
     STAssertTrue(c.suitID == 1, @"Card was not created correctly; Bad .suitID" );
 }
 
@@ -47,11 +45,6 @@
 
 #else                           // all code under test must be linked into the Unit Test bundle
                       
-- (void) testMath
-{
-    STAssertTrue((1+1)==2, @"Compiler isn't feeling well today :-(" );
-}
-
 
 
 #endif

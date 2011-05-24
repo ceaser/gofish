@@ -3,7 +3,7 @@
 //  GoFish
 //
 //  Created by Eric Barnes on 5/6/11.
-//  Copyright 2011 Marketstar Corp. All rights reserved.
+
 //
 //  See Also: http://developer.apple.com/iphone/library/documentation/Xcode/Conceptual/iphone_development/135-Unit_Testing_Applications/unit_testing_applications.html
 
@@ -21,11 +21,9 @@
 @interface DeckTest : SenTestCase {
     Deck *deckShuffled;
     Deck *deckNotShuffled;
-    Card *c;
 }
 @property (retain) Deck *deckShuffled;
 @property (retain) Deck *deckNotShuffled;
-@property (retain) Card *c;
 
 #if USE_APPLICATION_UNIT_TEST
 
@@ -33,8 +31,12 @@
 -(void)testDeckCreation;
 -(void)testCreateCards;
 -(void)testPlayDeckFullyPopulated;
--(void)tearDown;
+-(void)testShuffleDeck;
+-(void)testDealCard;
+-(void)testDeckAfterDealCard;
+-(void)testDealCardWithEmptyDeck;
 
+-(void)tearDown;
 #else
 -(void)testMath;              // simple standalone test
 #endif

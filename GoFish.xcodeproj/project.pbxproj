@@ -37,6 +37,7 @@
 		CAFB39E012E410C10079AEFB /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39DC12E410C10079AEFB /* GTMUnitTestDevLog.m */; };
 		CAFB39E512E410ED0079AEFB /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39E212E410ED0079AEFB /* GTMObjC2Runtime.m */; };
 		CAFB39E612E410ED0079AEFB /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFB39E412E410ED0079AEFB /* GTMRegex.m */; };
+		FC0FA2D1138B19930001C8CF /* PlayerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0FA2D0138B19930001C8CF /* PlayerTest.m */; };
 		FC6DC597136115B10001DB33 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC596136115B10001DB33 /* Deck.m */; };
 		FC6DC59B136115EA0001DB33 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59A136115EA0001DB33 /* Card.m */; };
 		FC6DC59E1361162C0001DB33 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DC59D1361162C0001DB33 /* Game.m */; };
@@ -87,6 +88,8 @@
 		CAFB39E312E410ED0079AEFB /* GTMRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMRegex.h; path = "google-toolbox-for-mac/Foundation/GTMRegex.h"; sourceTree = "<group>"; };
 		CAFB39E412E410ED0079AEFB /* GTMRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMRegex.m; path = "google-toolbox-for-mac/Foundation/GTMRegex.m"; sourceTree = "<group>"; };
 		CAFB39E712E411140079AEFB /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = "google-toolbox-for-mac/GTMDefines.h"; sourceTree = "<group>"; };
+		FC0FA2CF138B19930001C8CF /* PlayerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerTest.h; sourceTree = "<group>"; };
+		FC0FA2D0138B19930001C8CF /* PlayerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTest.m; sourceTree = "<group>"; };
 		FC6DC595136115B10001DB33 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = ../../GoFish/Classes/Deck.h; sourceTree = "<group>"; };
 		FC6DC596136115B10001DB33 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = ../../GoFish/Classes/Deck.m; sourceTree = "<group>"; };
 		FC6DC599136115EA0001DB33 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../../GoFish/Classes/Card.h; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 				7D02595E136FE10800A986A0 /* CardTest.m */,
 				7D40A14C1375070100FC36FF /* DeckTest.h */,
 				7D40A14D1375070100FC36FF /* DeckTest.m */,
+				FC0FA2CF138B19930001C8CF /* PlayerTest.h */,
+				FC0FA2D0138B19930001C8CF /* PlayerTest.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				CA4B988012E438D9001B0E03 /* ExampleTest.m in Sources */,
 				7D025960136FE10800A986A0 /* CardTest.m in Sources */,
 				7D40A14E1375070100FC36FF /* DeckTest.m in Sources */,
+				FC0FA2D1138B19930001C8CF /* PlayerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

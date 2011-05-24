@@ -15,7 +15,7 @@
     
 }
 typedef enum {ClownFish = 1, SwordFish, 
-    //ParrotFish, GoldFish, LionFish, CatFish, 
+    ParrotFish, GoldFish, LionFish, CatFish, 
     FlyingFish
 } Suit;
 

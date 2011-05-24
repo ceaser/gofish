@@ -1,9 +1,9 @@
 //
-//  CardTest.h
+//  ExampleTest.h
 //  GoFish
 //
-//  Created by Eric Barnes on 5/3/11.
-
+//  Created by Eric Barnes on 5/23/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 //  See Also: http://developer.apple.com/iphone/library/documentation/Xcode/Conceptual/iphone_development/135-Unit_Testing_Applications/unit_testing_applications.html
 
@@ -11,23 +11,28 @@
 //  Define USE_APPLICATION_UNIT_TEST to 0 if the unit test code is designed to be linked into an independent test executable.
 
 #define USE_APPLICATION_UNIT_TEST 1
-#import "Card.h"
+
 #import "GTMSenTestCase.h"
 #import <UIKit/UIKit.h>
-//#import "application_headers" as required
+#import "Player.h"
+#import "Game.h"
 
 
-@interface CardTest : GTMTestCase {
-    Card *c;
+
+@interface PlayerTest : GTMTestCase {
+    Player *player0;
+    Player *player1;
 }
 
+
 #if USE_APPLICATION_UNIT_TEST
+@property (retain) Player *player0;
+@property (retain) Player *player1;
 
-- (void)testCardCreation;
-- (void)testSuitToString;   
-
+-(void)testCheckForFullSuit;
+-(void)testRemoveSuitFromHand;
+-(void)testGetSuitCount;
 #else
-- (void)testMath;    // simple standalone test 
 
 #endif
 
