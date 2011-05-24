@@ -40,14 +40,14 @@
     
     for(NSInteger i = 0; i < (4 * FlyingFish); i++) // 4 cards times the number of suids (FlyingFish is the last suit in the enumeration)
     {
-        STAssertTrue([[deckShuffled.playDeck objectAtIndex:(i)] isKindOfClass:[Card class]], [NSString stringWithFormat:@"Object at index %i is not a card", i]);
-        STAssertTrue([[deckNotShuffled.playDeck objectAtIndex:(i)] isKindOfClass:[Card class]], [NSString stringWithFormat:@"Object at index %i is not a card", i]);
+        STAssertTrue([[deckNotShuffled.playDeck objectAtIndex:(i)] isKindOfClass: [Card class]], [NSString stringWithFormat:@"Object at index %i is not a card", i]);
     }
 }
 
 
 - (void)testPlayDeckFullyPopulated
 {
+
     STAssertTrue([deckShuffled.playDeck count] == (4 * FlyingFish), [NSString stringWithFormat:@"deckShuffled was created with less than %i cards", (4 * FlyingFish)]);
     STAssertTrue([deckNotShuffled.playDeck count] == (4 * FlyingFish), [NSString stringWithFormat:@"deckShuffled was created with less than %i cards", (4 * FlyingFish)]);
 }
@@ -123,7 +123,6 @@
 {
     STAssertTrue((1+1)==2, @"Compiler isn't feeling well today :-(" );
 }
-
 #endif
 
 

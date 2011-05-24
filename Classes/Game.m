@@ -19,7 +19,7 @@
 #ifndef NDEBUG
     NSLog(@"Game Initialized");
 #endif
-    deck = [[Deck alloc] initWithShuffle:NO];
+    deck = [[Deck alloc] initWithShuffle:YES]; // can pass in "NO" if the deck should not be shuffled.
     return self;
 } 
 
