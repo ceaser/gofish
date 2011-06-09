@@ -22,12 +22,12 @@
 /*
  -(id)initWithPlayerID:(int)pID andPlayerName:(NSString *)pName andGameReference:(Game *)gameRef;
  -(id)initWithPlayerID:(int)pID andPlayerName:(NSString *)pName;
- -(NSInteger)fishFor:(Suit)getSuit;
- -(void)drawCardFromDeck;
+ -(NSInteger)fishFor:(Suit)getSuit; - done
+ -(void)drawCardFromDeck; -- done
  -(void)writeHand;
- -(NSInteger)takeTurn;
- -(NSInteger)getSuitCount:(Suit)suit;
- -(void)removeSuitFromHand:(Suit)suit;
+ -(NSInteger)takeTurn; -- done
+ -(NSInteger)getSuitCount:(Suit)suit; -- done
+ -(void)removeSuitFromHand:(Suit)suit; -- done
  -(void)addToHandBySuit:(Suit)suit andCount:(int)count;
  -(void)writePlayerStatus;
  -(void)checkForFullSuit:(Suit)suit;
@@ -125,6 +125,33 @@
     suitCount = [player0 getSuitCount:ClownFish];
     STAssertTrue(suitCount == 1, [NSString stringWithFormat:@"There should have been 1 ClownFish in the player's hand, but %i were found", suitCount]);
 }
+
+-(void)testDrawCardFromDeck
+{
+    /*
+     Card *c = [self.game drawCardFromDeck];
+     
+     if([c isKindOfClass:[Card class]])
+     {
+     [hand addObject:c];
+     self.status = [NSMutableString stringWithFormat:@" drew a %@ from the game deck", [c suitName]];
+     [self checkForFullSuit:c.suitID];
+     }
+     else
+     {
+     self.status = [NSMutableString stringWithFormat:@" cannot draw a card because the deck is out of cards"];
+     }
+     
+     [self writePlayerStatus];
+     [self verifyHand];
+     */
+    
+    Card *c = [[Card alloc] initWithSuit:FlyingFish];
+    [player0.hand addObject:c];
+    STAssertEqualObjects([player0.hand lastObject], c, @"The card added to the player's hand was NOT the card drawn from the game deck");
+    
+}
+
 
 -(void)tearDown
 {

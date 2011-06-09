@@ -32,7 +32,12 @@
 -(void)testCheckForFullSuit;
 -(void)testRemoveSuitFromHand;
 -(void)testGetSuitCount;
-#else
+-(void)testDrawCardFromDeck;
+/*
+-(void)testTakeTurn;
+-(void)testFishFor;
+*/
+ #else
 
 #endif
 
