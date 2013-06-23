@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface GoFishViewController : UIViewController {
+    
 
-}
-
+    };
+    
+-(IBAction)soloGame; 
+    
 @end
-
