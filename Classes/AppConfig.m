@@ -37,6 +37,7 @@
         case FlyingFish:
             result = @"FlyingFish";
             break;
+            
         default:
             [NSException raise:NSGenericException format:@"Problem -> Unexpected suit type."];
     }

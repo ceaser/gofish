@@ -14,7 +14,10 @@
     
     
 }
-typedef enum {ClownFish = 1, SwordFish, ParrotFish, GoldFish, LionFish, CatFish, FlyingFish} Suit;
+typedef enum {ClownFish = 1, SwordFish, 
+    ParrotFish, GoldFish, LionFish, CatFish, 
+    FlyingFish
+} Suit;
 
 +(NSString *)suitToString:(Suit)currentSuit;
 @end

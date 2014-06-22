@@ -7,7 +7,6 @@
 //
 
 #import "Game.h"
-
 #import "Player.h"
 #import "Deck.h"
 #import "Card.h"
@@ -20,9 +19,7 @@
 #ifndef NDEBUG
     NSLog(@"Game Initialized");
 #endif
-    deck = [Deck new];
-    [self createPlayers];
-    
+    deck = [[Deck alloc] initWithShuffle:YES]; // can pass in "NO" if the deck should not be shuffled.
     return self;
 } 
 
@@ -32,16 +29,13 @@
 -(void)createPlayers{
     NSMutableArray *players = [NSMutableArray array];
     
-    // will eventually want to loop and create 5 players
-    for(int i = 0; i < 3; i++)
+    for(int i = 0; i < 5; i++)
     {
-        /*
-        Player *player = [[Player alloc] initWithPlayerID:i andPlayerName:@"NoName" andGameReference:self];
-         */
-        Player *player = [[Player alloc] initWithPlayerID:i andPlayerName:@"NoName"];
-        player.game = self;
+        Player *player = [[Player alloc] initWithPlayerID:i andPlayerName:@"Test Player" andGameReference:self];
+        //player.game = self;
         [players addObject:player];
         [player release];
+        player = nil;
     }
     playerList = players;
     [self dealCards];

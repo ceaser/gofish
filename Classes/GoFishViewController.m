@@ -15,6 +15,7 @@
 -(IBAction)soloGame {
     // create game    
     g = [Game new];
+    [g createPlayers];
     [g showWinner:[g startGameLoop]];
     [g release];
     
